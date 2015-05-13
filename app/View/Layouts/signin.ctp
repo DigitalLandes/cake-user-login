@@ -10,6 +10,7 @@
 
 		echo $this->Html->css('bootstrap.min');
 		echo $this->Html->css('bootstrap-theme.min');
+		echo $this->Html->css('signin');
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -17,11 +18,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<div class="page" ="header">
-				<h1>CakePHP: User login with remember option</h1>
-			</div>
 			<div id="content">
-
 				<?php echo $this->Session->flash(); ?>
 
 				<?php echo $this->fetch('content'); ?>
